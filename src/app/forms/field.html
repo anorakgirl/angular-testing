@@ -1,0 +1,14 @@
+<div class='row'>
+    <label ng-bind='label'
+           ng-class='{"focus": isFocused, "blur": isBlurred}'>
+    </label>
+</div>
+<div class='row'>
+    <input type='text'
+           ng-focus='focus()'
+           ng-blur='blur()'
+           ng-model='data'
+           ng-model-options='{debounce: 250}'
+           ng-disabled='isDisabled()'
+    />
+</div>
